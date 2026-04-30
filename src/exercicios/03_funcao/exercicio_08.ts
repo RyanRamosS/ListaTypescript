@@ -12,6 +12,8 @@ export function exercicio_08():void{
         if (quantidade>10){
             valor_desconto = 5
             preco_uni = preco_uni - preco_uni*valor_desconto/100
+            precos += preco_uni
+            precos_Quant++
             return total_item = preco_uni*quantidade
         }else{
             return total_item = preco_uni*quantidade
@@ -19,7 +21,7 @@ export function exercicio_08():void{
 
     }
     let preco_uni:number, quantidade:number, valor_desconto:number = 0, total_item:number = 0, produto:string, lista_Produto:any = [],
-    i:number = 0, total:number = 0, saida:number = 0
+    i:number = 0, total:number = 0, saida:number = 0, precos:number = 0, media_preco:number = 0, precos_Quant:number = 0
 
 
     while(saida != 2){
@@ -29,12 +31,14 @@ export function exercicio_08():void{
     preco_uni = Number(prompt(`Informe o preço unitario de ${produto}: `))
     quantidade = Number(prompt(`Informe a quantidade do ${produto}: `))
     desconto(preco_uni, quantidade)
-    console.log(total_item)
     total += total_item
+    media_preco = precos/precos_Quant
+
     saida = Number(prompt(`Deseja continuar o cadastro ?
 1 - Sim
 2 - Não`))
     }
-    alert(`O total geral foi :  R$ ${total.toFixed(2)}`)
+    alert(`O total geral foi :  R$ ${total.toFixed(2)}
+A media de preço é ${media_preco}`)
 }
 // fazer a listagem dos produtos
