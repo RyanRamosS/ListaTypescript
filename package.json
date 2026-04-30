@@ -1,25 +1,25 @@
 {
-  "name": "listatypescript",
+  "name": "rrs025-listatypescript",
   "version": "1.0.0",
-  "description": "Lista com os exercícios Typescript",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"tsc &&node./dist/index.js",
+    "start": "tsc && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RyanRamosS/ListaTypescript.git"
+    "url": "git+https://github.com/RRS025/RRS025-ListaTypeScript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/RyanRamosS/ListaTypescript/issues"
+    "url": "https://github.com/RRS025/RRS025-ListaTypeScript/issues"
   },
-  "homepage": "https://github.com/RyanRamosS/ListaTypescript#readme",
+  "homepage": "https://github.com/RRS025/RRS025-ListaTypeScript#readme",
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.2"
   }
 }

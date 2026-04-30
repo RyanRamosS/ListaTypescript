@@ -1,15 +1,18 @@
 {
-  "compilerOptions": {
-    "moduleDetection": "force",
-    "module": "ESnext",
-    "target": "ES6",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipDefaultLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_module", "dist"]
+"compilerOptions": {
+"moduleDetection": "force",
+"target": "ES6",
+// "module": "commonjs",
+"module": "ESNext",
+"rootDir": "./src",
+"outDir": "./dist",
+"esModuleInterop": true,
+"forceConsistentCasingInFileNames": true,
+"strict": true,
+"skipLibCheck": true,
+"moduleResolution": "bundler",
+"lib": ["ESNext", "DOM"]
+},
+"include": ["src/**/*"],
+"exclude": ["node_module", "dist"]
 }
